@@ -67,22 +67,37 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
- 
+ ~~~
+ Developed by: Kiran J
+ Reg no: 212221240022
+ // C++ code
+//
+int potpin=A5;
+int ledpin=2;
+void setup()
+{
+  pinMode(potpin, INPUT);
+  pinMode(ledpin, OUTPUT);
+  Serial.begin(9600);
+}
 
-
-
-
-
-
-
-
+void loop()
+{
+  int pot=analogRead(A5);
+  if (pot>=450){
+    digitalWrite(2, HIGH);
+  }else{
+    digitalWrite(2, LOW);
+  }
+     
+  }
+~~~
 
 **
 **Simulation output:** 
 **
 
-
-[My image](username.github.com/repository/img/image.jpg)
+![output](img2.jpg)
 
 
 
